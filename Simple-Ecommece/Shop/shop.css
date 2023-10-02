@@ -1,0 +1,15 @@
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #088178;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}

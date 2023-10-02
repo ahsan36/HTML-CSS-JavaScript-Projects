@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+
+    <link rel="shortcut icon" href="favi.png" type="image/x-icon">
+
+    <!---------- CSS ------------->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---------- JavaScript ------------->
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="left-container">
+
+            <!---------- HTML Editor ------------->
+            <div class="html-container">
+                <label for="html"> <i class="fab fa-html5"></i>HTML</label>
+                <textarea name="html" id="html" onkeyup="addCode()"></textarea>
+            </div>
+
+            <!---------- CSS Editor ------------->
+            <div class="css-container">
+                <label for="css"><i class="fab fa-css3-alt"></i>CSS</label>
+                <textarea name="css" id="css" onkeyup="addCode()"></textarea>
+            </div>
+            
+            <!---------- javaScript Editor ------------->
+            <div class="js-container">
+                <label for="js"><i class="fab fa-js-square"></i>JavaScript</label>
+                <textarea name="js" id="js" onkeyup="addCode()"></textarea>
+            </div>
+
+        </div>
+
+        <!---------- Output ------------->
+        <div class="right-container">
+            <label for="output"><i class="fas fa-code"></i>Output</label>
+            <iframe src="" id="output"></iframe>
+        </div>
+    </div>
+
+    <!---------- Dark Mode------------->
+    
+</body>
+</html>
